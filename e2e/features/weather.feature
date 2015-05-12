@@ -17,4 +17,3 @@ Feature: Weather Page
     And I see label "Rite now:" with value 
     And I see label "Sun Rise:" with value
     And I see label "Sun Set:" with value
-    Then I see about content

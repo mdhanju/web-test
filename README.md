@@ -43,5 +43,5 @@
 #runing selenium server
 # Error - "java.net.BindException: Selenium is already running on port 4444
 #http://localhost:4444/selenium-server/driver/?cmd=shutDownSeleniumServer# web-app
-
+#127.0.0.1
 
