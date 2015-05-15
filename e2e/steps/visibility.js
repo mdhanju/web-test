@@ -5,14 +5,17 @@ var visibilitySteps = function() {
 
     this.When(/^I see home tab$/, function(callback) {
         this.isVisible('#home', callback);
+        this.pause(1000, callback);
     });
 
     this.When(/^I see Mortgage Loan tab$/, function(callback) {
         this.isVisible('#mortgageLoan', callback);
+        this.pause(1000, callback);
     });
 
     this.When(/^I see Car Loan content$/, function(callback) {
         this.isVisible('#carLoan', callback);
+        this.pause(1000, callback);
     });
 
     this.Then(/^I see about content$/, function(callback) {
@@ -28,7 +31,8 @@ var visibilitySteps = function() {
         } else {
             console.log("arg1 tab = " + arg1);
         }
-        callback();
+        // callback();
+        this.pause(1000, callback);
     });
 
 
@@ -50,20 +54,22 @@ var visibilitySteps = function() {
     this.When(/^I see label "([^"]*)" with value$/, function(arg1, callback) {
         // Write code here that turns the phrase above into concrete actions
         console.log("arg1 label wirh value= " + arg1);
-        callback();
-        // this.pause(1000, callback);
+        // callback();
+        this.pause(1000, callback);
     });
 
     this.When(/^I see select with placeholder "([^"]*)"$/, function(arg1, callback) {
         // Write code here that turns the phrase above into concrete actions
         console.log("select with placeholder = " + arg1);
-        callback();
+        // callback();
+        this.pause(1000, callback);
     });
 
     this.When(/^I see conversion rate$/, function(callback) {
         // Write code here that turns the phrase above into concrete actions
         console.log("arg1 = ");
-        callback();
+        // callback();
+        this.pause(1000, callback);
     });
 
     this.When(/^I see label "([^"]*)"$/, function(arg1, callback) {

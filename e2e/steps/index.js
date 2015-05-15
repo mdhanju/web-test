@@ -8,7 +8,7 @@ var indexSteps = function() {
         console.log(' App port = ' + PROPERTIES.port);
         var appUrl = PROPERTIES.host + ':' + PROPERTIES.port;
         this.init().url(appUrl, callback);
-
+        this.pause(1000, callback);
     });
 };
 

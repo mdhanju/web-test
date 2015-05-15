@@ -5,7 +5,8 @@ var actionSteps = function() {
 
     this.When(/^I click on weather tab$/, function(callback) {
         this.click('#weather', function(err, callback) {});
-        callback();
+        // callback();
+        this.pause(1000, callback);
     });
 
     this.When(/^I click on tab "([^"]*)"$/, function(arg1, callback) {
@@ -17,7 +18,8 @@ var actionSteps = function() {
                 if (err) callback.fail(new Error("Expected to be on page  "));
             });
             this.click('#weather', function(err, callback) {});
-            callback();
+            // callback();
+            this.pause(1000, callback);
         }
     });
 
@@ -31,7 +33,8 @@ var actionSteps = function() {
             });
             this.click('#submit', function(err, callback) {});
         }
-        callback();
+        // callback();
+        this.pause(1000, callback);
     });
 }
 module.exports = actionSteps;
